@@ -1,12 +1,13 @@
+import 'package:bloc_example/weather_api_client.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -22,25 +23,19 @@ class WeatherListScreen extends StatefulWidget {
   final String title;
 
   @override
-  _WeatherListScreenState createState() => new _WeatherListScreenState();
+  _WeatherListScreenState createState() => _WeatherListScreenState();
 }
 
 class _WeatherListScreenState extends State<WeatherListScreen> {
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
-    return new Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
       body: Center(
         child: Text('test'),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }
