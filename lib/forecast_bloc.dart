@@ -11,7 +11,7 @@ class ForecastBloc {
   StreamSubscription<Forecast> _fetchForecastSub;
 
   final _forecastController = StreamController.broadcast<ForecastBlocState>();
-  Stream<ForecastBlocState> get websites => _forecastController.stream;
+  Stream<ForecastBlocState> get forecastStream => _forecastController.stream;
 
   ForecastBloc() {
     _currentState = ForecastBlocState.empty();
