@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4be7ce31-861e-412a-ada6-8acd4c0491a3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/forecast_bloc.dart" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lib/forecast_bloc_provider.dart" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
@@ -30,13 +30,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forecast_bloc.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="forecast_bloc.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/forecast_bloc.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="34" column="11" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+            <state relative-caret-position="314">
+              <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forecast_bloc_provider.dart" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/forecast_bloc_provider.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="63" lean-forward="false" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,6 +88,7 @@
         <option value="$PROJECT_DIR$/lib/forecast.dart" />
         <option value="$PROJECT_DIR$/lib/main.dart" />
         <option value="$PROJECT_DIR$/lib/forecast_bloc.dart" />
+        <option value="$PROJECT_DIR$/lib/forecast_bloc_provider.dart" />
       </list>
     </option>
   </component>
@@ -252,12 +265,12 @@
       <updated>1535720138457</updated>
       <workItem from="1535720141196" duration="182000" />
       <workItem from="1535720393451" duration="5431000" />
-      <workItem from="1535896007133" duration="964000" />
+      <workItem from="1535896007133" duration="1282000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6577000" />
+    <option name="totallyTimeSpent" value="6895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="23" width="1440" height="877" extended-state="6" />
@@ -394,10 +407,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/forecast_bloc.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="34" column="11" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+        <state relative-caret-position="314">
+          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/forecast_bloc_provider.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="63" lean-forward="false" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
