@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:bloc_example/forecast_bloc.dart';
 import 'package:bloc_example/forecast_bloc_provider.dart';
 import 'package:bloc_example/forecast_list.dart';
@@ -58,13 +60,27 @@ class _WeatherListScreenState extends State<WeatherListScreen> {
     );
   }
 
-  Widget _buildBody(BuildContext context, AsyncSnapshot<ForecastBlocState> snapshot) {
+  Widget _buildBody(BuildContext context,
+      AsyncSnapshot<ForecastBlocState> snapshot) {
     if (snapshot.data.loading) {
       return Center(
         child: CircularProgressIndicator(),
       );
     }
 
-    return ForecastList();
+    return ForecastList(
+      forecast: snapshot.data.forecast,
+      refreshCallback: _handleRefresh,
+    );
+  }
+
+  Future<Null> _handleRefresh() async {
+    ForecastBloc bloc = ForecastBlocProvider.of(context).bloc;
+
+    bloc.fetchForecastForCity('Hamburg');
+
+    await bloc.forecastStream.first;
+
+    return null;
   }
 }
