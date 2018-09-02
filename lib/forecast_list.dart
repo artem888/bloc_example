@@ -1,3 +1,4 @@
+import 'package:bloc_example/date_utils.dart';
 import 'package:bloc_example/forecast.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +23,7 @@ class ForecastList extends StatelessWidget {
     var widgets = <Widget>[];
     for (var i = 0; i < forecast.temperatures.length; i++) {
       widgets.add(
-        ForecastRow()
+        ForecastRow(forecast.temperatures[i], forecast.times[i])
       );
     }
 
@@ -34,10 +35,31 @@ class ForecastList extends StatelessWidget {
 }
 
 class ForecastRow extends StatelessWidget {
+  final double _temperature;
+  final DateTime _time;
+
+  ForecastRow(this._temperature, this._time);
+
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text('test'),
+    return Container(
+      height: 60.0,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Padding(
+            padding: EdgeInsets.only(top: 8.0, left: 8.0),
+            child: Text(
+                DateUtils.formattedDate(_time),
+                style: TextStyle(fontWeight: FontWeight.bold)
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 8.0, left: 8.0),
+            child: Text('$_temperature C'),
+          ),
+        ],
+      ),
     );
   }
 }
