@@ -6,7 +6,8 @@ class Forecast {
     List<dynamic> list = json['list'];
 
     this.temperatures = list.map((value) {
-      return value['main']['temp'] as double;
+      double temp = value['main']['temp'].toDouble();
+      return temp;
     }).toList();
 
     this.times = list.map((value) {
